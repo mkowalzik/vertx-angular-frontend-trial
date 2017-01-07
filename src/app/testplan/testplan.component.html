@@ -1,0 +1,70 @@
+<!-- Content here -->
+<h1 class="col-xs-12">
+  Testplan: {{testplan.title}} - {{testplan.id}}
+</h1>
+<div class="container-fluid">
+  <div class="row">
+    <form class="col-5">
+      <div class="form-group">
+        <label for="proto">Protocol</label>
+        <input type="text" class="form-control" id="proto" placeholder="Enter proto to test" value="http">
+      </div>
+      <div class="form-group">
+        <label for="host">Host</label>
+        <input type="text" class="form-control" id="host" placeholder="Enter host to test" value="www.heise.de">
+      </div>
+      <div class="form-group">
+        <label for="port">Password</label>
+        <input type="number" class="form-control" id="port" placeholder="Port" value="80">
+      </div>
+    </form>
+    <div class="col">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img class="d-block img-fluid" src="http://placehold.it/700x250?text=LiveResponseLatencies" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="http://placehold.it/700x250?text=Percentiles" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="http://placehold.it/700x250?text=ErrorRates" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <form>
+        <div class="form-group">
+          <label for="requests">Requests samples</label>
+          <textarea class="form-control" id="requests" rows="10" readonly>
+2017-01-07 17:43:03.059 status=200 duration=86ms host='www.heise.de' port=80 uri='/' msgId='Java8-21e74042-fd4e-4132-ade8-4c5144955275'
+2017-01-07 17:43:03.059 status=200 duration=86ms host='www.heise.de' port=80 uri='/' msgId='Java8-21e74042-fd4e-4132-ade8-4c5144955275'
+2017-01-07 17:43:03.059 status=200 duration=86ms host='www.heise.de' port=80 uri='/' msgId='Java8-21e74042-fd4e-4132-ade8-4c5144955275'
+2017-01-07 17:43:03.059 status=200 duration=86ms host='www.heise.de' port=80 uri='/' msgId='Java8-21e74042-fd4e-4132-ade8-4c5144955275'
+2017-01-07 17:43:03.059 status=200 duration=86ms host='www.heise.de' port=80 uri='/' msgId='Java8-21e74042-fd4e-4132-ade8-4c5144955275'
+2017-01-07 17:43:03.059 status=200 duration=86ms host='www.heise.de' port=80 uri='/' msgId='Java8-21e74042-fd4e-4132-ade8-4c5144955275'
+2017-01-07 17:43:03.059 status=200 duration=86ms host='www.heise.de' port=80 uri='/' msgId='Java8-21e74042-fd4e-4132-ade8-4c5144955275'
+2017-01-07 17:43:03.059 status=200 duration=86ms host='www.heise.de' port=80 uri='/' msgId='Java8-21e74042-fd4e-4132-ade8-4c5144955275'
+2017-01-07 17:43:03.059 status=200 duration=86ms host='www.heise.de' port=80 uri='/' msgId='Java8-21e74042-fd4e-4132-ade8-4c5144955275'
+      </textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="card-header">
+  <div class="row">
+    <div class="col-7">{{testplan.title}}</div>
+    <div class="col-5 text-right"><span class="badge badge-pill badge-success">Success</span></div>
+  </div>
+</div>
+<div class="card-block">
+  <p class="card-text">{{testplan.description}}</p>
+</div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Last run: 2017-01-07 15:51 - Duration: 0:45:12</li>
+</ul>
+<div class="card-block text-right">
+  <a href="#" class="btn btn-secondary">Delete</a>
+  <a class="btn btn-primary" [routerLink]="['/plans/', testplan.id]">Open</a>
+</div>
+

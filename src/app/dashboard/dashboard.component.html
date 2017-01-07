@@ -1,0 +1,8 @@
+<!-- Content here -->
+<h1 class="col-xs-12">
+  {{title}}
+</h1>
+<div class="card-deck">
+  <div *ngFor="let testplan of testplans" class="card" app-testplancard [testplan]="testplan"></div>
+</div>
+
